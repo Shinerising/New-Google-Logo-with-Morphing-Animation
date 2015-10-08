@@ -1,0 +1,724 @@
+<html>
+
+<head>
+    <style>
+        #svgback {
+            display: none;
+        }
+        
+        #cssfront {
+            width: 1000px;
+            height: 328.56px;
+        }
+        
+        #google_logo {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        #glogo_g1 {
+            position: absolute;
+            width: 25.5%;
+            height: 79.5%;
+            left: 0%;
+            top: 0%;
+            animation: ani01 1s 1s forwards, flow 2s 3.2s infinite;
+        }
+        
+        #glogo_o1 {
+            position: absolute;
+            width: 17.5%;
+            height: 54%;
+            left: 25.5%;
+            top: 25.5%;
+            animation: ani02 1s 1s forwards, flow 2s 3s infinite;
+        }
+        
+        #glogo_o2 {
+            position: absolute;
+            width: 17.5%;
+            height: 54%;
+            left: 43.4%;
+            top: 25.5%;
+            animation: ani03 1s 1s forwards, flow 2s 2.8s infinite;
+        }
+        
+        #glogo_g2 {
+            position: absolute;
+            width: 17%;
+            height: 77%;
+            left: 61.2%;
+            top: 25.5%;
+            animation: ani04 1s 1s forwards;
+        }
+        
+        #glogo_l {
+            position: absolute;
+            width: 5.3%;
+            height: 79.5%;
+            left: 78.9%;
+            top: 0%;
+            animation: ani05 1s 1s forwards, flow 2s 2.6s infinite;
+        }
+        
+        #glogo_e {
+            position: absolute;
+            width: 17.5%;
+            height: 54%;
+            left: 84.3%;
+            top: 25.5%;
+            animation: ani06 1s 1s forwards;
+        }
+        
+        #glogo_g1 .fill {
+            background: #4885ed;
+        }
+        
+        #glogo_o1 .fill {
+            background: #db3236;
+        }
+        
+        #glogo_o2 .fill {
+            background: #f4c20d;
+        }
+        
+        #glogo_g2 .fill {
+            background: #4885ed;
+        }
+        
+        #glogo_l .fill {
+            background: #3cba54;
+        }
+        
+        #glogo_e .fill {
+            background: #db3236;
+        }
+        
+        #s1_01 {
+            position: absolute;
+            width: 100.5%;
+            height: 97.6%;
+            left: 0.5%;
+            top: 0.2%;
+            border-radius: 50%;
+            animation: ani01_01 1s 1s forwards;
+        }
+        
+        #s1_02 {
+            position: absolute;
+            width: 30%;
+            height: 50%;
+            left: 63.3%;
+            top: 16.4%;
+            transform: rotate(44deg);
+            animation: ani01_02 1s 1s forwards;
+        }
+        
+        #s1_03 {
+            position: absolute;
+            width: 50.3%;
+            height: 60%;
+            left: 50.75%;
+            top: 38.3%;
+            animation: ani01_03 1s 1s forwards;
+        }
+        
+        #s1_04 {
+            position: absolute;
+            width: 71.5%;
+            height: 71%;
+            left: 15%;
+            top: 13.3%;
+            border-radius: 50%;
+            animation: ani01_04 1s 1s forwards;
+        }
+        
+        #s1_05 {
+            position: absolute;
+            width: 50%;
+            height: 55%;
+            left: 50.75%;
+            top: 44.5%;
+            overflow: hidden;
+            animation: ani01_05 1s 1s forwards;
+        }
+        
+        #s1_06 {
+            position: absolute;
+            width: 186%;
+            height: 155.5%;
+            left: -93%;
+            top: -59%;
+            border-radius: 50%;
+        }
+        
+        #s1_07 {
+            position: absolute;
+            width: 130%;
+            height: 96%;
+            left: -65%;
+            top: -24%;
+            border-radius: 50%;
+            animation: ani01_07 1s 1s forwards;
+        }
+        
+        #s1_08 {
+            position: absolute;
+            width: 90%;
+            height: 23.8%;
+            left: 0%;
+            top: 0%;
+        }
+        
+        #s2_01 {
+            position: absolute;
+            width: 93.8%;
+            height: 92.8%;
+            left: 2.57%;
+            top: 3.8%;
+            border-radius: 50%;
+            animation: ani02_01 1s 1s forwards;
+        }
+        
+        #s2_02 {
+            position: absolute;
+            width: 53.1%;
+            height: 56.3%;
+            left: 22.9%;
+            top: 22%;
+            border-radius: 50%;
+            animation: ani02_02 1s 1s forwards;
+        }
+        
+        #s3_01 {
+            position: absolute;
+            width: 93.8%;
+            height: 92.8%;
+            left: 2.57%;
+            top: 3.8%;
+            border-radius: 50%;
+            animation: ani03_01 1s 1s forwards;
+        }
+        
+        #s3_02 {
+            position: absolute;
+            width: 53.1%;
+            height: 56.3%;
+            left: 22.9%;
+            top: 22%;
+            border-radius: 50%;
+            animation: ani03_02 1s 1s forwards;
+        }
+        
+        #s4_01 {
+            position: absolute;
+            width: 91.8%;
+            height: 62%;
+            left: 3.2%;
+            top: 34.6%;
+            border-radius: 50%;
+        }
+        
+        #s4_02 {
+            position: absolute;
+            width: 50%;
+            height: 36%;
+            left: 24.8%;
+            top: 47.9%;
+            border-radius: 50%;
+        }
+        
+        #s4_03 {
+            position: absolute;
+            width: 100%;
+            height: 67%;
+            left: 0%;
+            top: 0%;
+        }
+        
+        #s4_04 {
+            position: absolute;
+            width: 50%;
+            height: 15%;
+            left: -1%;
+            top: 56.9%;
+            transform: rotate(-23deg);
+        }
+        
+        #s4_05 {
+            position: absolute;
+            width: 20%;
+            height: 63%;
+            left: 74.9%;
+            top: 4.9%;
+        }
+        
+        #s4_06 {
+            position: absolute;
+            width: 89%;
+            height: 65%;
+            left: 3.2%;
+            top: 2.8%;
+            border-radius: 50%;
+        }
+        
+        #s4_07 {
+            position: absolute;
+            width: 52.6%;
+            height: 39%;
+            left: 24%;
+            top: 15.7%;
+            border-radius: 50%;
+        }
+        
+        #s5_01 {
+            position: absolute;
+            width: 67%;
+            height: 92%;
+            left: 16.1%;
+            top: 3.6%;
+            animation: ani05_01 1s 1s forwards;
+        }
+        
+        #s6_01 {
+            position: absolute;
+            width: 90%;
+            height: 93.5%;
+            left: 4.8%;
+            top: 3.3%;
+            border-radius: 50%;
+            transform: rotate(-40deg);
+        }
+        
+        #s6_02 {
+            position: absolute;
+            width: 57%;
+            height: 57%;
+            left: 22%;
+            top: 22%;
+            border-radius: 50%;
+            transform: rotate(-40deg);
+        }
+        
+        #s6_03 {
+            position: absolute;
+            width: 24%;
+            height: 25%;
+            left: 75%;
+            top: 47.4%;
+            transform: rotate(34deg);
+        }
+        
+        #s6_04 {
+            position: absolute;
+            width: 20%;
+            height: 15%;
+            left: 78%;
+            top: 40.4%;
+            transform: rotate(-22.4deg);
+        }
+        
+        #s6_05 {
+            position: absolute;
+            width: 70%;
+            height: 15%;
+            left: 18%;
+            top: 37.9%;
+            transform: rotate(-22.4deg);
+        }
+        
+        .cover {
+            background: #FFF;
+            opacity: 1;
+        }
+        
+        @keyframes ani01 {
+            0% {
+                left: 0%;
+                top: 0%;
+                width: 25.5%;
+                height: 79.5%;
+            }
+            100% {
+                left: 27%;
+                top: 43.91%;
+                width: 4%;
+                height: 12.18%;
+            }
+        }
+        
+        @keyframes ani01_01 {
+            0% {
+                width: 100.5%;
+                height: 97.6%;
+                left: 0.5%;
+                top: 0.2%;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+        }
+        
+        @keyframes ani01_02 {
+            0% {
+                width: 30%;
+                height: 50%;
+                left: 63.3%;
+                top: 16.4%;
+                transform: rotate(44deg);
+                border-radius: 0%;
+            }
+            100% {
+                width: 0%;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+                transform: rotate(90deg);
+                border-radius: 50%;
+            }
+        }
+        
+        @keyframes ani01_03 {
+            0% {
+                width: 50.3%;
+                height: 60%;
+                left: 50.75%;
+                top: 38.3%;
+                border-radius: 0%;
+            }
+            100% {
+                width: 0%;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+                border-radius: 50%;
+            }
+        }
+        
+        @keyframes ani01_04 {
+            0% {
+                width: 71.5%;
+                height: 71%;
+                left: 15%;
+                top: 13.3%;
+            }
+            100% {
+                width: 0%;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+            }
+        }
+        
+        @keyframes ani01_05 {
+            0% {
+                width: 50%;
+                height: 55%;
+                left: 50.75%;
+                top: 44.5%;
+                border-radius: 0%;
+                opacity: 1;
+            }
+            30% {
+                opacity: 0;
+            }
+            100% {
+                width: 0%;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+                border-radius: 50%;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ani01_06 {
+            0% {
+                width: 186%;
+                height: 155.5%;
+                left: -93%;
+                top: -59%;
+                border-radius: 50%;
+            }
+            100% {
+                width: 50%;
+                height: 50%;
+                left: -50%;
+                top: -50%;
+                border-radius: 0%;
+            }
+        }
+        
+        @keyframes ani01_07 {
+            0% {
+                width: 130%;
+                height: 96%;
+                left: -65%;
+                top: -24%;
+            }
+            100% {
+                width: 50%;
+                height: 50%;
+                left: -50%;
+                top: -50%;
+            }
+        }
+        
+        @keyframes ani01_08 {
+            0% {
+                width: 90%;
+                height: 23.8%;
+                left: 0%;
+                top: 0%;
+                border-radius: 0%;
+            }
+            100% {
+                width: 0%;
+                height: 0%;
+                left: 0%;
+                top: 0%;
+                border-radius: 50%;
+            }
+        }
+        
+        @keyframes ani02 {
+            0% {
+                left: 25.5%;
+                top: 25.5%;
+                width: 17.5%;
+                height: 54%;
+            }
+            100% {
+                left: 41%;
+                top: 43.91%;
+                width: 4%;
+                height: 12.18%;
+            }
+        }
+        
+        @keyframes ani03 {
+            0% {
+                left: 43.4%;
+                top: 25.5%;
+                width: 17.5%;
+                height: 54%;
+            }
+            100% {
+                left: 55%;
+                top: 43.91%;
+                width: 4%;
+                height: 12.18%;
+            }
+        }
+        
+        @keyframes ani04 {
+            0% {
+                left: 61.2%;
+                top: 25.5%;
+                width: 17%;
+                height: 77%;
+                opacity: 1;
+            }
+            100% {
+                left: 65%;
+                top: 50%;
+                width: 0%;
+                height: 0%;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ani05 {
+            0% {
+                left: 78.9%;
+                top: 0%;
+                width: 5.3%;
+                height: 79.5%;
+            }
+            100% {
+                left: 69%;
+                top: 43.91%;
+                width: 4%;
+                height: 12.18%;
+            }
+        }
+        
+        @keyframes ani06 {
+            0% {
+                left: 84.3%;
+                top: 25.5%;
+                width: 17.5%;
+                height: 54%;
+                opacity: 1;
+            }
+            100% {
+                left: 77%;
+                top: 50%;
+                width: 0%;
+                height: 0%;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes ani02_01 {
+            0% {
+                width: 93.8%;
+                height: 92.8%;
+                left: 2.57%;
+                top: 3.8%;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+        }
+        
+        @keyframes ani02_02 {
+            0% {
+                width: 53.1%;
+                height: 56.3%;
+                left: 22.9%;
+                top: 22%;
+            }
+            100% {
+                width: 0%;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+            }
+        }
+        
+        @keyframes ani03_01 {
+            0% {
+                width: 93.8%;
+                height: 92.8%;
+                left: 2.57%;
+                top: 3.8%;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+        }
+        
+        @keyframes ani03_02 {
+            0% {
+                width: 53.1%;
+                height: 56.3%;
+                left: 22.9%;
+                top: 22%;
+            }
+            100% {
+                width: 0%;
+                height: 0%;
+                left: 50%;
+                top: 50%;
+            }
+        }
+        
+        @keyframes ani05_01 {
+            0% {
+                width: 67%;
+                height: 92%;
+                left: 16.1%;
+                top: 3.6%;
+                border-radius: 0%;
+            }
+            100% {
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+                border-radius: 50%;
+            }
+        }
+        
+        @keyframes flow {
+            0% {
+                top: 43.91%;
+            }
+            10% {
+                top: 23.91%;
+            }
+            30% {
+                top: 63.91%;
+            }
+            40% {
+                top: 43.91%;
+            }
+            100% {
+                top: 43.91%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        <div id="main">
+            <div id="svgback">
+                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="328.56" id="svg2">
+
+                    <path style="fill:#4285f4;fill-opacity:1" d="m246.11 116.18h-116.57v34.591h82.673c-4.0842 48.506-44.44 69.192-82.533 69.192-48.736 0-91.264-38.346-91.264-92.092 0-52.357 40.54-92.679 91.371-92.679 39.217 0 62.326 25 62.326 25l24.22-25.081s-31.087-34.608-87.784-34.608c-72.197-0.001-128.05 60.933-128.05 126.75 0 64.493 52.539 127.38 129.89 127.38 68.031 0 117.83-46.604 117.83-115.52 0-14.539-2.1109-22.942-2.1109-22.942z" fill="#4885ed" id="path2998" />
+                    <path style="fill:#ea4335;fill-opacity:1" d="m341.6 91.129c-47.832 0-82.111 37.395-82.111 81.008 0 44.258 33.249 82.348 82.673 82.348 44.742 0 81.397-34.197 81.397-81.397 0-54.098-42.638-81.959-81.959-81.959zm0.47563 32.083c23.522 0 45.812 19.017 45.812 49.66 0 29.993-22.195 49.552-45.92 49.552-26.068 0-46.633-20.878-46.633-49.79 0-28.292 20.31-49.422 46.741-49.422z" fill="#db3236" id="path3000" />
+                    <path style="fill:#fbbc05;fill-opacity:1" d="m520.18 91.129c-47.832 0-82.111 37.395-82.111 81.008 0 44.258 33.249 82.348 82.673 82.348 44.742 0 81.397-34.197 81.397-81.397 0-54.098-42.638-81.959-81.959-81.959zm0.47562 32.083c23.522 0 45.812 19.017 45.812 49.66 0 29.993-22.195 49.552-45.92 49.552-26.068 0-46.633-20.878-46.633-49.79 0-28.292 20.31-49.422 46.741-49.422z" fill="#f4c20d" id="path3005" />
+                    <path style="fill:#4285f4;fill-opacity:1" d="m695.34 91.215c-43.904 0-78.414 38.453-78.414 81.613 0 49.163 40.009 81.765 77.657 81.765 23.279 0 35.657-9.2405 44.796-19.847v16.106c0 28.18-17.11 45.055-42.936 45.055-24.949 0-37.463-18.551-41.812-29.078l-31.391 13.123c11.136 23.547 33.554 48.103 73.463 48.103 43.652 0 76.922-27.495 76.922-85.159v-146.77h-34.245v13.836c-10.53-11.347-24.93-18.745-44.04-18.745zm3.178 32.018c21.525 0 43.628 18.38 43.628 49.768 0 31.904-22.056 49.487-44.104 49.487-23.406 0-45.185-19.005-45.185-49.184 0-31.358 22.619-50.071 45.66-50.071z" fill="#4885ed" id="path3007" />
+                    <path style="fill:#ea4335;fill-opacity:1" d="m925.89 91.02c-41.414 0-76.187 32.95-76.187 81.57 0 51.447 38.759 81.959 80.165 81.959 34.558 0 55.768-18.906 68.426-35.845l-28.235-18.787c-7.3268 11.371-19.576 22.484-40.018 22.484-22.962 0-33.52-12.574-40.061-24.754l109.52-45.444-5.6859-13.318c-10.58-26.08-35.26-47.86-67.92-47.86zm1.4268 31.413c14.923 0 25.663 7.9342 30.224 17.447l-73.139 30.57c-3.1532-23.667 19.269-48.017 42.915-48.017z" fill="#db3236" id="path3011" />
+                    <path style="fill:#34a853;fill-opacity:1" d="m797.49 249.7h35.975v-240.75h-35.975z" fill="#3cba54" id="path3015" />
+                </svg>
+            </div>
+            <div id="cssfront">
+                <div id="google_logo">
+                    <div id="glogo_g1">
+                        <div id="s1_01" class="fill"></div>
+                        <div id="s1_02" class="cover"></div>
+                        <div id="s1_03" class="cover"></div>
+                        <div id="s1_04" class="cover"></div>
+                        <div id="s1_05">
+                            <div id="s1_06" class="fill"></div>
+                            <div id="s1_07" class="cover"></div>
+                            <div id="s1_08" class="fill"></div>
+                        </div>
+                    </div>
+                    <div id="glogo_o1">
+                        <div id="s2_01" class="fill"></div>
+                        <div id="s2_02" class="cover"></div>
+                    </div>
+                    <div id="glogo_o2">
+                        <div id="s3_01" class="fill"></div>
+                        <div id="s3_02" class="cover"></div>
+                    </div>
+                    <div id="glogo_g2">
+                        <div id="s4_01" class="fill"></div>
+                        <div id="s4_02" class="cover"></div>
+                        <div id="s4_03" class="cover"></div>
+                        <div id="s4_04" class="cover"></div>
+                        <div id="s4_05" class="fill"></div>
+                        <div id="s4_06" class="fill"></div>
+                        <div id="s4_07" class="cover"></div>
+                    </div>
+                    <div id="glogo_l">
+                        <div id="s5_01" class="fill"></div>
+                    </div>
+                    <div id="glogo_e">
+                        <div id="s6_01" class="fill"></div>
+                        <div id="s6_02" class="cover"></div>
+                        <div id="s6_03" class="cover"></div>
+                        <div id="s6_04" class="cover"></div>
+                        <div id="s6_05" class="fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
